@@ -1,0 +1,19 @@
+{
+  "name": "kbase-writer-tools",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Сценарий скриншотов и экспорт пользовательских статей в Word",
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "word": "node scripts/make-word.mjs",
+    "check:word": "python3 scripts/validate-docx.py",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "docx": "9.5.1",
+    "markdown-it": "14.1.0",
+    "puppeteer": "25.16.0"
+  }
+}

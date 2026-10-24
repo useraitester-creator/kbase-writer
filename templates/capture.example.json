@@ -1,0 +1,26 @@
+{
+  "source": "Настоящий компонент целевого приложения; укажите путь",
+  "data": "synthetic",
+  "fixture": {
+    "script": "fixture-dist/fixture.js",
+    "styles": ["fixture-dist/fixture.css"],
+    "sceneHook": "renderFixture"
+  },
+  "output": "images",
+  "evidence": "capture-evidence.json",
+  "viewport": { "width": 1180, "height": 1040, "deviceScaleFactor": 2 },
+  "shots": [
+    {
+      "id": "01-start",
+      "scene": "start",
+      "selector": "#app",
+      "caption": "Исходный экран приложения"
+    },
+    {
+      "id": "02-result",
+      "scene": "result",
+      "selector": "#app",
+      "caption": "Результат выполненного действия"
+    }
+  ]
+}
